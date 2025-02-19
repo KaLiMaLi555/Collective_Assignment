@@ -9,7 +9,18 @@ Upon analysing the json file, I found that there are no exact duplicates in the 
 So, the task is not as simple as just removing duplicates.
 
 For solving the problem I assume that removing duplicates means removing strings that mean the same things.  
+___
+### Setup using conda
 
+```
+conda create -n collective -c rapidsai -c conda-forge -c nvidia  \
+    rapids=25.02 python=3.11 'cuda-version>=12.0,<=12.8'
+pip3 install -r requirements.txt
+```
+
+For any other method refer to the [rapidsai](https://docs.rapids.ai/install/#conda) website
+for installing cudf and cuml.
+Then install the requirements using pip as shown above.
 ___
 ### Solution
 
